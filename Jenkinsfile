@@ -13,7 +13,7 @@ pipeline {
         }
         stage('git clone') {
             steps {
-                sh 'sudo rm -r *;git clone https://github.com/subudear/jenkin-terraform.git'
+                sh ' rm -r *;git clone https://github.com/subudear/jenkin-terraform.git'
             }
         }
         stage('tfsvars create') {
